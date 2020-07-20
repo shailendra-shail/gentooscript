@@ -27,9 +27,9 @@ wget https://bouncer.gentoo.org/fetch/root/all/releases/amd64/autobuilds/2020071
 
 tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 
-mkdir --parents /mnt/gentoo/etc/portage/repos.conf
+mkdir --parents /etc/portage/repos.conf
 
-cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
+cp /usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
